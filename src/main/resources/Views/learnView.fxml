@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="thisPane" maxHeight="754.0" maxWidth="1066.0" prefHeight="500.0" prefWidth="800.0" styleClass="background" stylesheets="@../Design/learnStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controllers.GameControllers.learnController">
+   <children>
+      <VBox alignment="CENTER" layoutX="312.0" layoutY="150.0" prefHeight="200.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onMouseClicked="#back" prefHeight="57.0" prefWidth="63.0" styleClass="smallButton" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="52.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label alignment="CENTER" graphicTextGap="20.0" prefHeight="53.0" prefWidth="595.0" text="English Learning Games">
+                     <HBox.margin>
+                        <Insets left="50.0" top="5.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/game.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="190.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#goToMyGame" prefHeight="211.0" prefWidth="400.0" styleClass="bigButton" text="Word Graft" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="82.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/typing.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#goToVocab" prefHeight="211.0" prefWidth="400.0" styleClass="bigButton" text="Vocabulary" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="82.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/learning.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="187.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onMouseClicked="#goToListen" prefHeight="209.0" prefWidth="400.0" styleClass="bigButton" text="Listening" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="82.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/headphone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

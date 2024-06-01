@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="675.0" styleClass="background" stylesheets="@../Design/addWordStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controllers.DictionaryControllers.addWordController">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="122.0" layoutX="22.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="75.0" layoutX="582.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="64.0" layoutX="185.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="75.0" layoutX="454.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="82.0" layoutX="295.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="119.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="559.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="153.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="28.0" layoutX="461.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="98.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="SRC_ATOP" fitHeight="122.0" fitWidth="154.0" layoutX="314.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="20.0" layoutX="572.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="26.0" layoutX="326.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dog.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="216.0" layoutY="-35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="362.0" prefWidth="675.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="380.0" prefWidth="255.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="174.0" styleClass="addWordLabel" text="New English word" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="55.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="englishWord" prefHeight="43.0" prefWidth="200.0" styleClass="textField" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="65.0" right="65.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="181.0" styleClass="addWordLabel" text="Phiên âm" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="spelling" prefHeight="43.0" prefWidth="200.0" styleClass="textField" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="65.0" right="65.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="185.0" styleClass="addWordLabel" text="Từ loại" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="wordType" prefHeight="43.0" prefWidth="200.0" styleClass="textField" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="65.0" right="65.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="380.0" prefWidth="233.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="24.0" prefWidth="201.0" styleClass="addWordLabel" text="New definition" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="100.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea fx:id="vietnameseWord" prefHeight="200.0" prefWidth="200.0" styleClass="textArea" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="50.0" left="30.0" right="30.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onMouseClicked="#add" prefHeight="57.0" prefWidth="68.0" stylesheets="@../Design/addWordStyle.css" text="ADD" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/save.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip fx:id="tooltip1" text="Nhấn để tạo từ mới." />
+                     </tooltip>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="498.0" prefWidth="675.0" styleClass="background" stylesheets="@../Design/searchStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.Controllers.DictionaryControllers.searchController">
+   <children>
+      <ListView fx:id="listView" layoutX="57.0" layoutY="76.0" prefHeight="388.0" prefWidth="190.0" styleClass="listView" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="428.0" AnchorPane.topAnchor="76.0" />
+      <TextField fx:id="searchField" layoutX="18.0" layoutY="28.0" prefHeight="25.0" prefWidth="342.0" styleClass="textField" stylesheets="@../Design/searchStyle.css" AnchorPane.bottomAnchor="444.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="28.0">
+         <tooltip>
+            <Tooltip fx:id="tooltip3" text="Nhập từ tiếng anh." />
+         </tooltip></TextField>
+      <WebView fx:id="webView" layoutX="257.0" layoutY="143.0" prefHeight="321.0" prefWidth="410.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="257.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="143.0" />
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="86.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="386.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="344.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="303.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="257.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="209.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="169.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="430.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="18.0" layoutY="129.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/duck.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="609.0" layoutY="45.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="571.0" layoutY="32.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="485.0" layoutY="45.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="27.0" layoutX="523.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cloud.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btDelete" contentDisplay="GRAPHIC_ONLY" layoutX="598.0" layoutY="92.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="48.0" text="Delete" AnchorPane.bottomAnchor="365.0" AnchorPane.leftAnchor="598.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="92.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="38.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/trashBin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip fx:id="tooltip1" text="Nhấn để xoá từ đang chọn." />
+         </tooltip></Button>
+      <Button fx:id="btChange" contentDisplay="GRAPHIC_ONLY" layoutX="512.0" layoutY="92.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="48.0" text="Change">
+         <tooltip>
+            <Tooltip fx:id="tooltip2" text="Nhấn để sửa định nghĩa từ đang chọn" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="38.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/writing.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btVoice" contentDisplay="GRAPHIC_ONLY" layoutX="275.0" layoutY="89.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="40.0" text="Voice">
+         <graphic>
+            <ImageView fitHeight="45.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/speaker.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btSearch" layoutX="369.0" layoutY="21.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="48.0">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="32.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
