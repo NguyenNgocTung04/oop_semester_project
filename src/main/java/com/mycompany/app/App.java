@@ -11,5 +11,6 @@ public class App
         System.out.println(TranslateApi.translate("vi","en","anh là con cáo"));
         DictionaryManagement.dictionaryImportFromFile("word_list.txt");
         DictionaryCommandline.dictionaryAdvanced();
+
     }
 }
